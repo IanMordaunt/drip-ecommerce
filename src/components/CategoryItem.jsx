@@ -16,14 +16,27 @@ const Info = styled.div`
 position: absolute;
 width: 100%;
 height: 100%;
-top: 0;
+top: 255px;
 left: 0;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
 `;
 const Title = styled.h1`
-
+color: #fdc57b;
+margin-bottom: 20px;
+border: solid;
+background-color: #7fa99b;
 `;
 const Button = styled.button`
-
+border: none;
+padding: 10px;
+background-color: #fdc57b;
+color: #7fa99b;
+font-weight: 700;
+font-size: 20px;
+cursor: pointer;
 `;
 
 function CategoryItem({item}) {
