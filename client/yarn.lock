@@ -2722,6 +2722,11 @@
     "lodash" "^4.17.11"
     "picomatch" "^2.3.0"
 
+"babel-plugin-syntax-flow@^6.8.0":
+  "integrity" "sha1-TDqyCiryaqIM0lmVw5jE63AxDI0="
+  "resolved" "https://registry.npmjs.org/babel-plugin-syntax-flow/-/babel-plugin-syntax-flow-6.18.0.tgz"
+  "version" "6.18.0"
+
 "babel-plugin-syntax-jsx@^6.18.0":
   "integrity" "sha1-CvMqmm4Tyno/1QaeYtew9Y0NiUY="
   "resolved" "https://registry.npmjs.org/babel-plugin-syntax-jsx/-/babel-plugin-syntax-jsx-6.18.0.tgz"
@@ -2731,6 +2736,14 @@
   "integrity" "sha1-/WU28rzhODb/o6VFjEkDpZe7O/U="
   "resolved" "https://registry.npmjs.org/babel-plugin-syntax-object-rest-spread/-/babel-plugin-syntax-object-rest-spread-6.13.0.tgz"
   "version" "6.13.0"
+
+"babel-plugin-transform-flow-comments@^6.17.0":
+  "integrity" "sha1-jZSREy8rSKvQZW+Wwg87vW/BdSk="
+  "resolved" "https://registry.npmjs.org/babel-plugin-transform-flow-comments/-/babel-plugin-transform-flow-comments-6.22.0.tgz"
+  "version" "6.22.0"
+  dependencies:
+    "babel-plugin-syntax-flow" "^6.8.0"
+    "babel-runtime" "^6.22.0"
 
 "babel-plugin-transform-object-rest-spread@^6.26.0":
   "integrity" "sha1-DzZpLVD+9rfi1LOsFHgTepY7ewY="
@@ -2792,13 +2805,18 @@
     "babel-plugin-macros" "2.8.0"
     "babel-plugin-transform-react-remove-prop-types" "0.4.24"
 
-"babel-runtime@^6.26.0":
+"babel-runtime@^6.22.0", "babel-runtime@^6.26.0":
   "integrity" "sha1-llxwWGaOgrVde/4E/yM3vItWR/4="
   "resolved" "https://registry.npmjs.org/babel-runtime/-/babel-runtime-6.26.0.tgz"
   "version" "6.26.0"
   dependencies:
     "core-js" "^2.4.0"
     "regenerator-runtime" "^0.11.0"
+
+"babel@^6.23.0":
+  "integrity" "sha1-0NHn2APpdHZb7qMjLU4VPA77kPQ="
+  "resolved" "https://registry.npmjs.org/babel/-/babel-6.23.0.tgz"
+  "version" "6.23.0"
 
 "babylon@^6.18.0":
   "integrity" "sha512-q/UEjfGJ2Cm3oKV71DJz9d25TPnq5rhBVL2Q4fA5wcC3jcrdn7+SssEybFIxwAvvP+YCsCYNKughoF33GxgycQ=="
@@ -5259,6 +5277,20 @@
   "resolved" "https://registry.npmjs.org/flatten/-/flatten-1.0.3.tgz"
   "version" "1.0.3"
 
+"flow-babel-webpack-plugin@^1.1.1":
+  "integrity" "sha512-xgZt6sWUWMek1P+rdzJqXG9OaWCUqTfaDb1OoEVh2mXFb7Nppcd4Rm9WW9Dz4uS5T3MTe/BFVH0ZjUX8Oxh1JQ=="
+  "resolved" "https://registry.npmjs.org/flow-babel-webpack-plugin/-/flow-babel-webpack-plugin-1.1.1.tgz"
+  "version" "1.1.1"
+  dependencies:
+    "babel-plugin-transform-flow-comments" "^6.17.0"
+    "flow-bin" ">=0.44.2 <1"
+    "lodash.merge" "^4.6.0"
+
+"flow-bin@>=0.44.2 <1":
+  "integrity" "sha512-CIvShSnB4I7SsfkE9S7ECpUCkBNqDQGDWr+0uzulKGYEBnCYwFzITE1T84weLmINQwO1dR6ntsH0LlWLoGCquQ=="
+  "resolved" "https://registry.npmjs.org/flow-bin/-/flow-bin-0.173.0.tgz"
+  "version" "0.173.0"
+
 "flush-write-stream@^1.0.0":
   "integrity" "sha512-3Z4XhFZ3992uIq0XOqb9AreonueSYphE6oYbpt5+3u06JWklbsPkNv3ZKkP9Bz/r+1MWCaMoSQ28P85+1Yc77w=="
   "resolved" "https://registry.npmjs.org/flush-write-stream/-/flush-write-stream-1.1.1.tgz"
@@ -7270,6 +7302,11 @@
   "integrity" "sha1-vMbEmkKihA7Zl/Mj6tpezRguC/4="
   "resolved" "https://registry.npmjs.org/lodash.memoize/-/lodash.memoize-4.1.2.tgz"
   "version" "4.1.2"
+
+"lodash.merge@^4.6.0":
+  "integrity" "sha512-0KpjqXRVvrYyCsX1swR/XTK0va6VQkQM6MNo7PqW77ByjAhoARA8EfrP1N4+KlKj8YS0ZUCtRT/YUuhyYDujIQ=="
+  "resolved" "https://registry.npmjs.org/lodash.merge/-/lodash.merge-4.6.2.tgz"
+  "version" "4.6.2"
 
 "lodash.sortby@^4.7.0":
   "integrity" "sha1-7dFMgk4sycHgsKG0K7UhBRakJDg="
