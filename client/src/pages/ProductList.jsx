@@ -1,4 +1,5 @@
 import React from "react";
+import { useLocation } from "react-router-dom";
 import styled from "styled-components";
 import Announcement from "../components/Announcement";
 import Footer from "../components/Footer";
@@ -33,6 +34,16 @@ const Select = styled.select`
 const Option = styled.option``;
 
 const ProductList = () => {
+  const location = useLocation();
+  const cat = location.pathname.split("/")[2];
+  const [filters, setFilters] = useState({});
+
+  const handleFilters = (e) => {
+    const value = e.target.value;
+    setFilters({
+      [e.target.name]: value,
+    });
+  };
   return (
     <Container>
       <Navbar />
@@ -41,19 +52,15 @@ const ProductList = () => {
       <FilterContainer>
         <Filter>
           <FilterText>Filter Coffee:</FilterText>
-          <Select>
-            <Option disabled selected>
-              Roast
-            </Option>
+          <Select name="roast" onChange={handleFilters}>
+            <Option disabled>Roast</Option>
             <Option>Light</Option>
             <Option>Medium</Option>
             <Option>Dark</Option>
             <Option>Espresso</Option>
           </Select>
-          <Select>
-            <Option disabled selected>
-              Region
-            </Option>
+          <Select name="region" onChange={handleFilters}>
+            <Option disabled>Region</Option>
             <Option>Central America</Option>
             <Option>South America</Option>
             <Option>Africa</Option>
