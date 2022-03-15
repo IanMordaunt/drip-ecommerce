@@ -18,7 +18,7 @@ margin-bottom: 20px;
 
 const Description = styled.div`
 font-size: 24px;
-font-width: 300px;
+font-weight: 300;
 margin-bottom: 20px;
 `;
 
